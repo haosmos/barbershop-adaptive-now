@@ -1,0 +1,250 @@
+@import "./common/variables.scss";
+@import "./common/scaffolding.scss";
+@import "./common/variables.scss";
+@import "./common/mixins.scss";
+
+.user-nav__login {
+  position: relative;
+
+  display: block;
+  padding: 17px 21px 17px 49px;
+
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.user-nav__login-icon {
+  position: absolute;
+  top: 29px;
+  left: 25px;
+
+  width: 16px;
+  height: 16px;
+
+  opacity: 0.3;
+
+  polygon {
+    fill: #ffffff;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .user-nav {
+    width: 60px;
+  }
+
+  .user-nav__login {
+    width: 68px;
+    height: 71px;
+    padding: 0;
+
+    font-size: 0;
+
+    &:hover .user-list__login-icon {
+      opacity: 1;
+
+      polygon {
+        fill: #826550;
+      }
+    }
+
+    &:active .user-list__login-icon {
+      opacity: 0.3;
+
+      polygon {
+        fill: #ffffff;
+      }
+    }
+  }
+
+  .user-list__login-icon {
+    top: 29px;
+    left: 12px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-nav {
+    width: auto;
+    max-width: 160px;
+  }
+
+  .user-nav__login {
+    position: relative;
+
+    width: auto;
+    height: auto;
+    padding-top: 25px;
+    padding-right: 30px;
+    padding-bottom: 23px;
+    padding-left: 50px;
+
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+      color: #000000;
+
+      background-color: #ffffff;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+
+      background-color: #ffffff;
+    }
+
+    &:hover .user-nav__login-icon {
+      opacity: 0.3;
+
+      polygon {
+        fill: #000000;
+      }
+    }
+
+    &:active .user-nav__login-icon {
+      opacity: 0.1;
+    }
+  }
+
+  .user-nav_login-icon {
+    left: 15px;
+  }
+}
+
+ /* .user-nav {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 160px;
+  }
+
+  .user-nav__link {
+    height: auto;
+    width: auto;
+      padding-top: 24px;
+      padding-bottom: 23px;
+      padding-right: 31px;
+      padding-left: 54px;
+      font-size: 18px;
+      font-weight: bold;
+
+      text-transform: uppercase;
+
+      &:hover {
+        color: $black;
+        background-color: $white;
+      }
+
+      &[href]:active {
+        color: rgba($black, 0.3);
+      }
+    }
+  }
+
+  .user-nav__link:hover > .user-nav__login-icon {
+    fill: rgba($black, 0.3);
+  }
+
+  .user-nav__link:active > .user-nav__login-icon {
+    fill: rgba($black, 0.1);
+  }
+}*/
+
+
+/*.user-nav {
+  @include list-reset;
+
+  .user-nav__link {
+    position: relative;
+    display: block;
+    padding: 13px 21px;
+    padding-left: 50px;
+
+    line-height: 24px;
+    color: $white;
+    text-decoration: none;
+    background-color: $nav-brown;
+
+    &:active {
+      color: rgba($white, 0.3);
+    }
+  }
+
+  .user-nav__icon-login {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: rgba($white, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .user-nav {
+    .user-nav__link {
+      width: 68px;
+      height: 71px;
+      padding: 0;
+      font-size: 0;
+      background: none;
+
+      &:hover {
+        fill: $light-brown;
+      }
+    }
+
+    .user-nav__icon-login {
+      &:hover {
+        fill: $light-brown;
+      }
+    }
+  }
+
+  .user-nav__link:hover > .user-nav__icon-login {
+    fill: $light-brown;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 160px;
+
+    .user-nav__link {
+      height: auto;
+      width: auto;
+      padding-top: 24px;
+      padding-bottom: 23px;
+      padding-right: 31px;
+      padding-left: 54px;
+      font-size: 18px;
+      font-weight: bold;
+
+      text-transform: uppercase;
+
+      &:hover {
+        color: $black;
+        background-color: $white;
+      }
+
+      &[href]:active {
+        color: rgba($black, 0.3);
+      }
+    }
+  }
+
+  .user-nav__link:hover > .user-nav__icon-login {
+    fill: rgba($black, 0.3);
+  }
+
+  .user-nav__link:active > .user-nav__icon-login {
+    fill: rgba($black, 0.1);
+  }
+}*/
+
+
